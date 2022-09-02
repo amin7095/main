@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        sh 'powershell --version'
+        sh 'pwsh --version'
       }
     }
     stage('hello') {
