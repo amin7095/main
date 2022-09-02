@@ -8,7 +8,7 @@ pipeline {
     }
     stage('hello') {
       steps {
-        sh 'pwsh hello.ps1'
+        sudo pwsh -command "&.\hello.ps1"
       }
     }
   }
